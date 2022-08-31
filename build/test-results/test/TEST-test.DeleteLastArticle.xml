@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.DeleteLastArticle" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-31T03:23:20" hostname="RICHI" time="11.821">
+  <properties/>
+  <testcase name="deleteLastArticleWithInvalidToken" classname="test.DeleteLastArticle" time="6.068"/>
+  <testcase name="deleteLastArticleWithValidToken" classname="test.DeleteLastArticle" time="5.748"/>
+  <system-out><![CDATA[{
+    "success": true,
+    "message": "Login success",
+    "result": {
+        "id": 5,
+        "name": "Clark Kent",
+        "email": "superman@gmail.com",
+        "phone": "5555551234",
+        "email_verified_at": null,
+        "created_at": "2022-04-14T23:25:58.000000Z",
+        "updated_at": "2022-04-14T23:25:58.000000Z"
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmFkMTAyMzQxMzAxMzEzMWZhOWJlYmZkZjQ2YTQyZjQ1NDgzMjNiZWQ2NzFjNjBhNGI4ZDU4MjQyNjM3MjE0MTk2NTU4ZTI5OTBhZGUyNmQiLCJpYXQiOjE2NjE5MTYyMDEuMDk5NTc5LCJuYmYiOjE2NjE5MTYyMDEuMDk5NTg0LCJleHAiOjE2OTM0NTIyMDEuMDk3NDcyLCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.M8OrjZNGHvOLMpQM62b5f-WoB6BrZ2_IRtFOa1hyRbyVB1m1X-zsQtj2-mWQizmyGePRH5DmH9YQhDNNQ3L9bnRMwh6--qbifCMpTFgDxy1NVDxionrve0DWqoykrNwTusYmMjzjc8lkEOyPHNuLyZrN_sUYR5PAi5BDbn38fUkZJdDYvXBmLZjYZ83qTstZfuTMVLiHaHOKviGBjghrC77ipBWDfYgqw9iy1HArriZzzcQD4FEygMFuOS4f4sEk6ejOG1DKpD1xAlS9Nnfkvv-lEbSwr8AFNVGqPhqwjovITteTe05cENGKh6I8rYbd9UxNEvotkAXb-hQ60fnW2Dn8zi4fm1gbDJkJgDXpDRXkOxzkLdp9BqLaWqrDROflYKzaemoH35l5iaMLKczNT7gg6TDWBx9I1CyMW3iUlMIQnyXXvOvmoNHwFz3iEfSvhPYaFkEynPghx42zgFzTpB9yilWQuYsvsS9oopwO72coUGDcwRna_zPNlH7feK1KIB6b40lJUItTRHw-Z3JUx2_-Yd9YF-jIll_eVG0_uvXD__ZXn_MJrlb8nOeo6RV8meORDgzFqiK_GKKqv0rX-dPUN0uMoTzvrNhacY_WZiKCLcfEYgjMfi0a4vafSGpebfCwFY47BSOwqtle5hJ_zjVuKCI1Klm3V9oaOQnIPm4",
+    "errors": [
+        
+    ],
+    "status": 200
+}
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmFkMTAyMzQxMzAxMzEzMWZhOWJlYmZkZjQ2YTQyZjQ1NDgzMjNiZWQ2NzFjNjBhNGI4ZDU4MjQyNjM3MjE0MTk2NTU4ZTI5OTBhZGUyNmQiLCJpYXQiOjE2NjE5MTYyMDEuMDk5NTc5LCJuYmYiOjE2NjE5MTYyMDEuMDk5NTg0LCJleHAiOjE2OTM0NTIyMDEuMDk3NDcyLCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.M8OrjZNGHvOLMpQM62b5f-WoB6BrZ2_IRtFOa1hyRbyVB1m1X-zsQtj2-mWQizmyGePRH5DmH9YQhDNNQ3L9bnRMwh6--qbifCMpTFgDxy1NVDxionrve0DWqoykrNwTusYmMjzjc8lkEOyPHNuLyZrN_sUYR5PAi5BDbn38fUkZJdDYvXBmLZjYZ83qTstZfuTMVLiHaHOKviGBjghrC77ipBWDfYgqw9iy1HArriZzzcQD4FEygMFuOS4f4sEk6ejOG1DKpD1xAlS9Nnfkvv-lEbSwr8AFNVGqPhqwjovITteTe05cENGKh6I8rYbd9UxNEvotkAXb-hQ60fnW2Dn8zi4fm1gbDJkJgDXpDRXkOxzkLdp9BqLaWqrDROflYKzaemoH35l5iaMLKczNT7gg6TDWBx9I1CyMW3iUlMIQnyXXvOvmoNHwFz3iEfSvhPYaFkEynPghx42zgFzTpB9yilWQuYsvsS9oopwO72coUGDcwRna_zPNlH7feK1KIB6b40lJUItTRHw-Z3JUx2_-Yd9YF-jIll_eVG0_uvXD__ZXn_MJrlb8nOeo6RV8meORDgzFqiK_GKKqv0rX-dPUN0uMoTzvrNhacY_WZiKCLcfEYgjMfi0a4vafSGpebfCwFY47BSOwqtle5hJ_zjVuKCI1Klm3V9oaOQnIPm4
+				Accept=*/*
+				Content-Type=application/json
+Request URI:	https://apingweb.com/api/articles
+{
+    "success": true,
+    "message": "Success",
+    "result": [
+        {
+            "id": 2,
+            "title": "What is Lorem Ipsum?",
+            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s",
+            "picture": "https://example.com/lorem.png",
+            "user_id": "1",
+            "created_at": "2022-03-22T01:21:20.000000Z",
+            "updated_at": "2022-03-22T01:21:20.000000Z"
+        },
+        {
+            "id": 60,
+            "title": "Mithril Js",
+            "body": "Mithril.js is a modern client-side JavaScript framework for building Single Page Applications. It's small (< 10kb gzip), fast and provides routing and XHR utilities out of the box.",
+            "picture": "/tmp/phpLyVQnG",
+            "user_id": "5",
+            "created_at": "2022-08-25T12:34:10.000000Z",
+            "updated_at": "2022-08-25T12:34:10.000000Z"
+        },
+        {
+            "id": 61,
+            "title": "React Js",
+            "body": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
+            "picture": "/tmp/phpwRukGz",
+            "user_id": "5",
+            "created_at": "2022-08-25T12:36:32.000000Z",
+            "updated_at": "2022-08-25T12:36:32.000000Z"
+        }
+    ],
+    "errors": [
+        
+    ],
+    "status": 200
+}
+Headers:		Authorization=Bearer disputationi vocent scripta suscipit euripidis dapibus condimentum
+				Accept=*/*
+				Content-Type=application/json
+Request URI:	https://apingweb.com/api/article/delete/61
+{
+    "message": "API not found or wrong method",
+    "status": 404
+}
+{
+    "success": true,
+    "message": "Login success",
+    "result": {
+        "id": 5,
+        "name": "Clark Kent",
+        "email": "superman@gmail.com",
+        "phone": "5555551234",
+        "email_verified_at": null,
+        "created_at": "2022-04-14T23:25:58.000000Z",
+        "updated_at": "2022-04-14T23:25:58.000000Z"
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQwY2Y3Y2FmZGFiOTAzOTU1NGE5MWY1OGI4YzVlYzk3MTgyODEyMmQ5ZWU1YzM2YTJkODE4ZDdlYjcwODQzOGMzNTkwYmMxYjZiYTg5NDEiLCJpYXQiOjE2NjE5MTYyMDYuMzY1MTI2LCJuYmYiOjE2NjE5MTYyMDYuMzY1MTI5LCJleHAiOjE2OTM0NTIyMDYuMzYzMDEsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.W0GKo8bgrI3KgiWB1IphXnQPGmUQ2Plcr44OUeZGGHzdHX988vs7fevZvrjcv3skoNAc4yO11UkZQf6P7SCjv9L41umiJOGp7LOkHVyss1CxIz8CPPEKMbrg472K_7ERxRWZLzGzb8f-9YxsFwzJ627yfnwi7mJHQSWPyN5b37dnQzE9N1g730pxr7TDIhChm7nievCGgf9xsFb_g0ghI_V6g8WFYCvgWfY42LKpwkb8JUvAfkdqvrTL6uV3Ro9w7yrLgt73eSTe5bVLAeHIUJG-o7FJ2mYT9jCy_E5qE8ak-oYJm-nWfag6sGjZMoELkyGOzDLLB1GF6cCWG40Xf1Pa1jESgeFGF40sofy6k6iJu_N-ICAztMSQfuiMtFwCOPrT3TPusElYJXxaNhKM0fHeGjJLYbneOG9J54gTtYV0mEp-KovkMeRpjc-PZiHo44QUPJhRlUYMuKa9_DJeyxAg-0d5eLpUEFGi5w0D-aR5exHa1j3URsplhsfZDl4foTyzFkxp8NI_rkzX2QRKxvD7883rdaVBkI95NZ16EypB-Ylc9abFpKm9ur2UxISHQgf3G3_ynDKVV6NM6p2tewgFRZKU68rvJDSxyisB2smxhvvCwdWLuv-wUgZYviy3IP6LpIuQ5YGYneI-hhESEqK-42CkLfOHI4ijMdidMhE",
+    "errors": [
+        
+    ],
+    "status": 200
+}
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQwY2Y3Y2FmZGFiOTAzOTU1NGE5MWY1OGI4YzVlYzk3MTgyODEyMmQ5ZWU1YzM2YTJkODE4ZDdlYjcwODQzOGMzNTkwYmMxYjZiYTg5NDEiLCJpYXQiOjE2NjE5MTYyMDYuMzY1MTI2LCJuYmYiOjE2NjE5MTYyMDYuMzY1MTI5LCJleHAiOjE2OTM0NTIyMDYuMzYzMDEsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.W0GKo8bgrI3KgiWB1IphXnQPGmUQ2Plcr44OUeZGGHzdHX988vs7fevZvrjcv3skoNAc4yO11UkZQf6P7SCjv9L41umiJOGp7LOkHVyss1CxIz8CPPEKMbrg472K_7ERxRWZLzGzb8f-9YxsFwzJ627yfnwi7mJHQSWPyN5b37dnQzE9N1g730pxr7TDIhChm7nievCGgf9xsFb_g0ghI_V6g8WFYCvgWfY42LKpwkb8JUvAfkdqvrTL6uV3Ro9w7yrLgt73eSTe5bVLAeHIUJG-o7FJ2mYT9jCy_E5qE8ak-oYJm-nWfag6sGjZMoELkyGOzDLLB1GF6cCWG40Xf1Pa1jESgeFGF40sofy6k6iJu_N-ICAztMSQfuiMtFwCOPrT3TPusElYJXxaNhKM0fHeGjJLYbneOG9J54gTtYV0mEp-KovkMeRpjc-PZiHo44QUPJhRlUYMuKa9_DJeyxAg-0d5eLpUEFGi5w0D-aR5exHa1j3URsplhsfZDl4foTyzFkxp8NI_rkzX2QRKxvD7883rdaVBkI95NZ16EypB-Ylc9abFpKm9ur2UxISHQgf3G3_ynDKVV6NM6p2tewgFRZKU68rvJDSxyisB2smxhvvCwdWLuv-wUgZYviy3IP6LpIuQ5YGYneI-hhESEqK-42CkLfOHI4ijMdidMhE
+				Accept=*/*
+				Content-Type=application/json
+Request URI:	https://apingweb.com/api/articles
+{
+    "success": true,
+    "message": "Success",
+    "result": [
+        {
+            "id": 2,
+            "title": "What is Lorem Ipsum?",
+            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s",
+            "picture": "https://example.com/lorem.png",
+            "user_id": "1",
+            "created_at": "2022-03-22T01:21:20.000000Z",
+            "updated_at": "2022-03-22T01:21:20.000000Z"
+        },
+        {
+            "id": 60,
+            "title": "Mithril Js",
+            "body": "Mithril.js is a modern client-side JavaScript framework for building Single Page Applications. It's small (< 10kb gzip), fast and provides routing and XHR utilities out of the box.",
+            "picture": "/tmp/phpLyVQnG",
+            "user_id": "5",
+            "created_at": "2022-08-25T12:34:10.000000Z",
+            "updated_at": "2022-08-25T12:34:10.000000Z"
+        },
+        {
+            "id": 61,
+            "title": "React Js",
+            "body": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
+            "picture": "/tmp/phpwRukGz",
+            "user_id": "5",
+            "created_at": "2022-08-25T12:36:32.000000Z",
+            "updated_at": "2022-08-25T12:36:32.000000Z"
+        }
+    ],
+    "errors": [
+        
+    ],
+    "status": 200
+}
+{
+    "success": true,
+    "message": "Login success",
+    "result": {
+        "id": 5,
+        "name": "Clark Kent",
+        "email": "superman@gmail.com",
+        "phone": "5555551234",
+        "email_verified_at": null,
+        "created_at": "2022-04-14T23:25:58.000000Z",
+        "updated_at": "2022-04-14T23:25:58.000000Z"
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzFmMDIzNzhmYWNiNmUxZTQzMjUzY2QwZjAwYzlmOWUxNWRlZTM5MzBmNWM0YzY0ZDkzNjhiMzg4MjliZTMzMjFmMDJkNDg2ZGEzNmZmNzYiLCJpYXQiOjE2NjE5MTYyMDguOTc0Mzc2LCJuYmYiOjE2NjE5MTYyMDguOTc0Mzc5LCJleHAiOjE2OTM0NTIyMDguOTcyMTU2LCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.NIQgs5zSsGDS7IS8Q7wPDs-BT_xVWkJuhNWaN-1zNdYWDfooIJ1ajiXZVla0fZ_5SleNmnHKFDTFR6WxaXWeMKiKwmoEOESkbkT_d82enWLSyFHOnDdOLw0pk1_AI2KFcslxjaexSzEV4pZwxE39wgkr4GACrKGB65vQC1e0vCm8bz_oufi4uUhlbW2CZTJp-1gMn3XktWovhF0DWrNh2FcBtj0v71mhv3gFg4DBifprpJJc6M0MP-73DvDWgSQe1lvjCIopOwoEQIirs9GcokO3SpEv0qXFBgOBSTBsMMOIw43egK_ldGHziFD7PgXmeWqxjoetQDFgRSic9EsE_ouA2EtwIPJtcwYclvTvfJnjRJ8RRrcp99J2wBJnu5gJ1TJ1NZ3dZ2O1t2bQNoqB_aLiCN29zxXVyCbz4RwO2NXmyHr5td-6aPZmSfkvceta6I1eYJavSkwtn-cfZLrqhu5D8fpAf_7ag3Oy9F6jf6z_8f4km6I2up512i2LMDukxQQQdzeZlwU5Ayb-Wdde17tS67nRorcDw4q93uSGLu7qmipmu92x-TQCwE0dXc4QBesuLzRb5uSOM2c6W368pnM4XDNdbtldh6pB-pxI-NYSP1S5zP9651NAOrptp7bEf1QQTDYt3JqpGOE7z-YjenO-qKHOv5mZxKd8Gei3n9U",
+    "errors": [
+        
+    ],
+    "status": 200
+}
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzFmMDIzNzhmYWNiNmUxZTQzMjUzY2QwZjAwYzlmOWUxNWRlZTM5MzBmNWM0YzY0ZDkzNjhiMzg4MjliZTMzMjFmMDJkNDg2ZGEzNmZmNzYiLCJpYXQiOjE2NjE5MTYyMDguOTc0Mzc2LCJuYmYiOjE2NjE5MTYyMDguOTc0Mzc5LCJleHAiOjE2OTM0NTIyMDguOTcyMTU2LCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.NIQgs5zSsGDS7IS8Q7wPDs-BT_xVWkJuhNWaN-1zNdYWDfooIJ1ajiXZVla0fZ_5SleNmnHKFDTFR6WxaXWeMKiKwmoEOESkbkT_d82enWLSyFHOnDdOLw0pk1_AI2KFcslxjaexSzEV4pZwxE39wgkr4GACrKGB65vQC1e0vCm8bz_oufi4uUhlbW2CZTJp-1gMn3XktWovhF0DWrNh2FcBtj0v71mhv3gFg4DBifprpJJc6M0MP-73DvDWgSQe1lvjCIopOwoEQIirs9GcokO3SpEv0qXFBgOBSTBsMMOIw43egK_ldGHziFD7PgXmeWqxjoetQDFgRSic9EsE_ouA2EtwIPJtcwYclvTvfJnjRJ8RRrcp99J2wBJnu5gJ1TJ1NZ3dZ2O1t2bQNoqB_aLiCN29zxXVyCbz4RwO2NXmyHr5td-6aPZmSfkvceta6I1eYJavSkwtn-cfZLrqhu5D8fpAf_7ag3Oy9F6jf6z_8f4km6I2up512i2LMDukxQQQdzeZlwU5Ayb-Wdde17tS67nRorcDw4q93uSGLu7qmipmu92x-TQCwE0dXc4QBesuLzRb5uSOM2c6W368pnM4XDNdbtldh6pB-pxI-NYSP1S5zP9651NAOrptp7bEf1QQTDYt3JqpGOE7z-YjenO-qKHOv5mZxKd8Gei3n9U
+				Accept=*/*
+				Content-Type=application/json
+Request URI:	https://apingweb.com/api/article/delete/61
+{
+    "success": true,
+    "message": "Article has been deleted",
+    "result": [
+        
+    ],
+    "errors": [
+        
+    ],
+    "status": 200
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

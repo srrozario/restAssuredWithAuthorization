@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //TestNG
+    testImplementation 'org.testng:testng:7.5'
+
+    //dummy Text
+    testImplementation 'com.thedeanda:lorem:2.1'
+
+    //Selenium
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.2.1'
+
+    //Browser
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.2.0'
+
+    //Extent Report
+    testImplementation 'com.relevantcodes:extentreports:2.41.2'
+
+    //POI
+    testImplementation 'org.apache.poi:poi:5.2.2'
+    testImplementation 'org.apache.poi:poi-ooxml:5.2.2'
+
+    //APPIUM
+    testImplementation 'io.appium:java-client:8.1.1'
+
+    //Rest Assured
+    testImplementation 'io.rest-assured:rest-assured:5.1.1'
+    testImplementation 'io.rest-assured:json-path:5.1.1'
+    testImplementation 'io.rest-assured:xml-path:5.1.1'
+
+    // JSON
+    testImplementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    //Karate
+  //  testImplementation 'com.intuit.karate:karate-junit5:1.2.0'
+
+    //OWASP ZAP
+    testImplementation 'org.zaproxy:zap-clientapi:1.10.0'
+
+}
+
+test {
+    useTestNG()
+}
